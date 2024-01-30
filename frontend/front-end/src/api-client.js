@@ -18,7 +18,15 @@ export const register = async (formData) => {
     }
   };
   
-  
+  export const fetchHotels = async ()=> {
+    const response = await fetch(`${API_BASE_URL}/api/hotels`);
+    if (!response.ok) {
+      throw new Error("Error fetching hotels");
+    }
+    return response.json();
+  };
+
+
   export const validateToken = async () => {
     const response = await fetch(`${API_BASE_URL}/api/auth/validate-token`, {
       credentials: "include"

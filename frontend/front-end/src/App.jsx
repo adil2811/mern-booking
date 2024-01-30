@@ -15,6 +15,7 @@ import Detail from './pages/Details';
 import EditHotel from './pages/EditHotel';
 import Search from './pages/Search';
 import Booking from './pages/Booking';
+import Home from './pages/Home';
 
 function App() {
   const {isLoggedIn} = useAppContext
@@ -23,7 +24,7 @@ console.log('✌️isLoggedIn --->', isLoggedIn);
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout> <p>Home page</p> </Layout>}/>
+        <Route path="/" element={<Layout> <Home/> </Layout>}/>
         <Route path="/search" element={<Layout> <Search/> </Layout>}/>
         <Route path="/register" element={<Layout> <Register/> </Layout>}/>
         <Route path="/signin" element={<Layout> <SignIn/> </Layout>}/>

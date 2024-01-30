@@ -8,14 +8,14 @@ import {
 import Layout from './layouts/Layout';
 import Register from './pages/Register';
 import SignIn from './pages/Signin';
-import Addhotel from './pages/Addhotel';
+import Addhotel from './pages/AddHotel';
 import { useAppContext } from './contexts/AppContext';
 import MyHotels from './pages/MyHotel';
 import Detail from './pages/Details';
 import EditHotel from './pages/EditHotel';
 import Search from './pages/Search';
 import Booking from './pages/Booking';
-import Home from './pages/Home';
+import Home from './pages/Home'; 
 
 function App() {
   const {isLoggedIn} = useAppContext

@@ -4,8 +4,8 @@ import "dotenv/config"
 import mongoose from 'mongoose'
 import usersRoutes from './routes/users.js';
 import authRoutes from './routes/auth.js'
-import myHotelRoutes from './routes/my-hotels.js   '
-import hotelRoutes from './routes/hotel.js'
+import myHotelRoutes from './routes/my-hotels.js';
+import hotelRoutes from './routes/hotel.mjs'
 import cookieParser from 'cookie-parser'
 import { v2 as cloudinary } from "cloudinary";
 import path from 'path'
@@ -13,8 +13,6 @@ import { fileURLToPath } from 'url';
 
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
